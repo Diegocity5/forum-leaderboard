@@ -6,5 +6,9 @@ const postsContainer = document.getElementById('posts-container');
 
 //Funcion que se ejecuta independiente del flujo principal para traer datos.
 const fetchData = async ()=>{
-    
+    try{
+
+    }catch(err){
+        
+    }
 }
