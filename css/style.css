@@ -58,7 +58,7 @@ th {
   padding-bottom: 10px;
   font-size: 1.3rem;
 }
-td:not(:first-child){
+td:not(:first-child) {
   text-align: center;
 }
 td {
@@ -122,7 +122,10 @@ td {
 }
 /*Breakpoint*/
 @media (max-width: 750px) {
-  .table-wrapper, table, th, .post-title {
+  .table-wrapper,
+  table,
+  th,
+  .post-title {
     outline: 1px solid aqua;
   }
   .table-wrapper {
