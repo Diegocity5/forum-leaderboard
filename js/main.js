@@ -18,5 +18,5 @@ const fetchData = async ()=>{
 fetchData();
 
 const showLatestPosts = (data)=>{
-
+    const {topic_list, users} = data;
 }
