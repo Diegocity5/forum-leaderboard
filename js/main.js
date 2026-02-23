@@ -4,6 +4,12 @@ const forumCategoryUrl = "https://forum.freecodecamp.org/c/";
 const avatarUrl = "https://sea1.discourse-cdn.com/freecodecamp";
 const postsContainer = document.getElementById('posts-container');
 
+//Funcion encargada de calcular el tiempo transcurrido de la publicación.
+function timeAgo(time){
+    const currentTime = new Date();
+    const lastPost = new Date(time);
+}
+
 //Funcion que se ejecuta independiente del flujo principal para traer datos.
 const fetchData = async ()=>{
     try{
