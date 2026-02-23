@@ -27,7 +27,7 @@ const showLatestPosts = (data)=>{
         <tr>
             <td class="post-title">${title}</td>
             <td></td>
-            <td></td>
+            <td>${posts_count - 1}</td>
             <td></td>
             <td></td>
         </tr>`
