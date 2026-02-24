@@ -25,6 +25,7 @@ const allCategories = {
 };
 
 const forumCategory = (id)=>{
+    let selectedCategory = {};
     
 }
 //Funcion encargada de calcular el tiempo transcurrido de la publicación.
