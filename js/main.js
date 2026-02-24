@@ -12,6 +12,10 @@ const allCategories = {
     409: {
         category: 'Project Feedback',
         className: 'feedback'
+    },
+    417: {
+        category: 'Freecodecamp Support',
+        className: 'support'
     }
 };
 
