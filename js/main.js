@@ -27,6 +27,14 @@ function timeAgo(time){
     //Entonces sera dias transcurridos.
     return `${daysAgo}d ago`;
 }
+//Funcion encargada de mejorar el formato de numeros de vistas.
+function viewCount(views){
+    if(views >= 1000){
+        return `${Math.floor(views / 1000)}k`;
+    }else{
+        return views;
+    }
+}
 
 //Funcion que se ejecuta independiente del flujo principal para traer datos.
 const fetchData = async ()=>{
