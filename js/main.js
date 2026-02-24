@@ -29,6 +29,7 @@ const forumCategory = (id)=>{
     }
     //Url de la categoria seleccionada.
     const url = `${forumCategoryUrl}${selectedCategory.className}/${id}`;
+    const linkText = selectedCategory.category;
 }
 //Funcion encargada de calcular el tiempo transcurrido de la publicación.
 function timeAgo(time){
