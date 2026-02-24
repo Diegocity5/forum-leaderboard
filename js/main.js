@@ -5,18 +5,9 @@ const avatarUrl = "https://sea1.discourse-cdn.com/freecodecamp";
 const postsContainer = document.getElementById('posts-container');
 //Objeto para guardar todas las categorias disponibles de los temas del foro con sus nombres de clase.
 const allCategories = {
-    299: {
-        category: 'Career Advice',
-        clasName: 'career'
-    },
-    409: {
-        category: 'Project Feedback',
-        className: 'feedback'
-    },
-    417: {
-        category: 'Freecodecamp Support',
-        className: 'support'
-    },
+    299: {category: 'Career Advice', clasName: 'career'},
+    409: {category: 'Project Feedback', className: 'feedback'},
+    417: {category: 'Freecodecamp Support', className: 'support'},
     421: { category: "JavaScript", className: "javascript" },
     423: { category: "HTML - CSS", className: "html-css" },
     424: { category: "Python", className: "python" },
@@ -36,6 +27,8 @@ const forumCategory = (id)=>{
         selectedCategory.category = 'General',
         selectedCategory.id = 1;
     }
+    //Url de la categoria seleccionada.
+    const url = `${forumCategoryUrl}${selectedCategory.className}/${id}`;
 }
 //Funcion encargada de calcular el tiempo transcurrido de la publicación.
 function timeAgo(time){
