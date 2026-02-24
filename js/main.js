@@ -8,6 +8,24 @@ const postsContainer = document.getElementById('posts-container');
 function timeAgo(time){
     const currentTime = new Date();
     const lastPost = new Date(time);
+    //Tiempo en milisegundos transcurridos a la fecha actual.
+    const timeDifference = currentTime - lastPost;
+    const msPerMinute = 1000 * 60;//calculando milisegundos que representan un minuto.
+    
+    const minutesAgo = Math.floor(timeDifference / msPerMinute);
+    const hoursAgo = Math.floor(minutesAgo / 60);
+    const daysAgo = Math.floor(hoursAgo / 24);
+
+    //Validando si la publicación esta en minutos transcurridos.
+    if(minutesAgo < 60){
+        return `${minutesAgo}m ago`;
+    }
+    //Validando si la publicación esta en horas trasncurridas.
+    if(hoursAgo < 24){
+        return `${hoursAgo}h ago`;
+    }
+    //Entonces sera dias transcurridos.
+    return `${daysAgo}d ago`;
 }
 
 //Funcion que se ejecuta independiente del flujo principal para traer datos.
