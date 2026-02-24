@@ -29,6 +29,8 @@ const forumCategory = (id)=>{
     //verificando si nuestro objeto tiene el id como propiedad.
     if(allCategories.hasOwnProperty(id)){
         const {className, category} = allCategories[id];
+        selectedCategory.className = className;
+        selectedCategory.category = category;
     }
 }
 //Funcion encargada de calcular el tiempo transcurrido de la publicación.
