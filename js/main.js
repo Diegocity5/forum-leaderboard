@@ -3,6 +3,10 @@ const forumTopicUrl  = "https://forum.freecodecamp.org/t/";
 const forumCategoryUrl = "https://forum.freecodecamp.org/c/";
 const avatarUrl = "https://sea1.discourse-cdn.com/freecodecamp";
 const postsContainer = document.getElementById('posts-container');
+//Objeto para guardar todas las categorias disponibles de los temas del foro con sus nombres de clase.
+const allCategories = {
+    
+};
 
 //Funcion encargada de calcular el tiempo transcurrido de la publicación.
 function timeAgo(time){
