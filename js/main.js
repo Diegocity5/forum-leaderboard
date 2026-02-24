@@ -16,9 +16,17 @@ const allCategories = {
     417: {
         category: 'Freecodecamp Support',
         className: 'support'
-    }
+    },
+    421: { category: "JavaScript", className: "javascript" },
+    423: { category: "HTML - CSS", className: "html-css" },
+    424: { category: "Python", className: "python" },
+    432: { category: "You Can Do This!", className: "motivation" },
+    560: { category: "Back-End Development", className: "backend" },
 };
 
+const forumCategory = (id)=>{
+    
+}
 //Funcion encargada de calcular el tiempo transcurrido de la publicación.
 function timeAgo(time){
     const currentTime = new Date();
