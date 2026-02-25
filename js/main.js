@@ -5,7 +5,7 @@ const avatarUrl = "https://sea1.discourse-cdn.com/freecodecamp";
 const postsContainer = document.getElementById('posts-container');
 //Objeto para guardar todas las categorias disponibles de los temas del foro con sus nombres de clase.
 const allCategories = {
-    299: {category: 'Career Advice', clasName: 'career'},
+    299: {category: 'Career Advice', className: 'career'},
     409: {category: 'Project Feedback', className: 'feedback'},
     417: {category: 'Freecodecamp Support', className: 'support'},
     421: { category: "JavaScript", className: "javascript" },
@@ -86,7 +86,10 @@ const showLatestPosts = (data)=>{
         const {id, title, views, posts_count, slug, posters, category_id, bumped_at} = item;
         return `
         <tr>
-            <td class="post-title">${title}</td>
+            <td>
+             <p class="post-title">${title}</p>
+             ${forumCategory(category_id)}
+            </td>
             <td></td>
             <td>${posts_count - 1}</td>
             <td>${viewCount(views)}</td>
