@@ -17,7 +17,9 @@ const allCategories = {
 
 //Funcion encargada de los avatars de los usuarios participantes del tema.
 const avatars = (posters, users)=>{
-    
+    return posters.map((poster)=>{
+        
+    });
 }
 
 const forumCategory = (id)=>{
