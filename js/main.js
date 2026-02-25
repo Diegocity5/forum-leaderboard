@@ -15,6 +15,11 @@ const allCategories = {
     560: { category: "Back-End Development", className: "backend" },
 };
 
+//Funcion encargada de los avatars de los usuarios participantes del tema.
+const avatars = (posters, users)=>{
+    
+}
+
 const forumCategory = (id)=>{
     let selectedCategory = {};
     //verificando si nuestro objeto tiene el id como propiedad.
