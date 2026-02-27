@@ -23,6 +23,7 @@ const avatars = (posters, users)=>{
 
         //Si existio un usuario
         if(user){
+            const avatar = user.avatar_template.replace(/{size}/, 30);
             
         }
     });
