@@ -102,7 +102,7 @@ const showLatestPosts = (data)=>{
         return `
         <tr>
             <td>
-             <a class="post-title">${title}</a>
+             <a href="${forumTopicUrl}${slug}${id}" class="post-title">${title}</a>
              ${forumCategory(category_id)}
             </td>
             <td>
