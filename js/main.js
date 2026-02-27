@@ -20,7 +20,11 @@ const avatars = (posters, users)=>{
     //Buscando el usuario que le pertenece al poster
     return posters.map((poster)=>{
         const user = users.find((user)=> user.id === poster.user_id);
-        
+
+        //Si existio un usuario
+        if(user){
+            
+        }
     });
 }
 
