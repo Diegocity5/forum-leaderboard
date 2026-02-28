@@ -47,7 +47,6 @@ table {
   table-layout: fixed;
   border-collapse: collapse;
   overflow-x: scroll;
-  outline: 1px solid aqua;
 }
 #topics {
   text-align: start;
